@@ -8,20 +8,27 @@ body {
     font-family: var(--font-main);
     color: var(--text);
     line-height: 1.6;
-
     background: var(--background);
-
     max-width: var(--max-width);
     width: 80%;
     margin: 2rem auto;
 }
 
+header {
+    background: var(--background);
+    max-wdith: var(--max-width);
+}
+
 h1 {
+    color: var(--text);
+    font-family: var(--font-main);
     font-size: 2.5rem;
     margin-bottom: .5rem;
 }
 
 h2 {
+    color: var(--text);
+    font-family: var(--font-main);
     margin-top: 2rem;
     margin-bottom: .75rem;
 }
@@ -43,7 +50,7 @@ article > p {
 
 .latin-term {
     font-style: italic;
-    color: darkred;
+    color: var(--accent);
 }
 
 [lang] {
@@ -52,7 +59,7 @@ article > p {
 
 [type="text"] {
     padding: .4rem;
-    border: 1px solid gray;
+    border: 1px solid var(--border);
 }
 
 dt {
@@ -72,6 +79,7 @@ dt + dd {
 blockquote {
     padding: 1em;
     border-left: 4px solid var(--accent);
+    max-width: var(--max-width);
 }
 
 a {
@@ -84,6 +92,7 @@ a:hover {
 
 fieldset {
     padding: 1rem;
+    border: 1px solid var(--border);
 }
 
 label {
@@ -96,18 +105,21 @@ input {
 }
 
 button {
-    padding: .5rem 1rem;
+    color: var(--text);
+    background: var(--background);
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
 }
 
 input:focus,
-button:focus {
+button:focus,
+a:focus {
     border: 2px solid var(--accent);
 }
 
-
 input:checked + label {
+    color: var(--accent);
     font-weight: bold;
-    color: green;
 }
 
 dt::before {
