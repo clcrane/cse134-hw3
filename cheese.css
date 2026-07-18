@@ -1,0 +1,115 @@
+@import url("variables.css");
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text);
+    line-height: 1.6;
+
+    background: var(--background);
+
+    max-width: var(--max-width);
+    width: 80%;
+    margin: 2rem auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: .75rem;
+}
+
+p,
+dl,
+blockquote,
+form {
+    margin-bottom: 1.25rem;
+}
+
+header p {
+    color: var(--accent);
+}
+
+article > p {
+    font-size: 1.1rem;
+}
+
+.latin-term {
+    font-style: italic;
+    color: darkred;
+}
+
+[lang] {
+    font-style: italic;
+}
+
+[type="text"] {
+    padding: .4rem;
+    border: 1px solid gray;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+dt + dd {
+    margin-bottom: 1rem;
+}
+
+#warning {
+    border: 2px solid var(--border);
+    padding: 1rem;
+}
+
+blockquote {
+    padding: 1em;
+    border-left: 4px solid var(--accent);
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+fieldset {
+    padding: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+input {
+    margin-bottom: .75rem;
+}
+
+button {
+    padding: .5rem 1rem;
+}
+
+input:focus,
+button:focus {
+    border: 2px solid var(--accent);
+}
+
+
+input:checked + label {
+    font-weight: bold;
+    color: green;
+}
+
+dt::before {
+    content: "🧀 ";
+}
