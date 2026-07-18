@@ -1,0 +1,9 @@
+:root {
+    --background: #f6f0e7;
+    --text: #3b2b1c;
+    --accent: #c78b2b;
+    --border: #d8a04d;
+
+    --font-main: Georgia, "Times New Roman", serif;
+    --max-width: 700px;
+}
